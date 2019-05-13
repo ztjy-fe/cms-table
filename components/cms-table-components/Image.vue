@@ -4,14 +4,6 @@
     </div>
 </template>
 
-<script>
-import fieldMixin from '@/components/cms-table-components/field-mixin'
-
-export default {
-	mixins: [fieldMixin]
-}
-</script>
-
 <style scoped lang="scss">
     .img-wraper {
         width: 60px;

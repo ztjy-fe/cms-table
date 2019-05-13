@@ -24,17 +24,8 @@
 </template>
 
 <script>
-import TextButton from '@/components/cms-table-components/TextButton.vue'
-import Image from '@/components/cms-table-components/Image.vue'
-import EditButton from '@/components/cms-table-components/EditButton.vue'
-import ButtonGroup from '@/components/cms-table-components/ButtonGroup.vue'
-import Input from '@/components/cms-table-components/Input.vue'
-import Link from '@/components/cms-table-components/Link.vue'
 
 export default {
-	components: {
-		TextButton
-	},
 	props: {
 		fields: {
 			type: Array,
@@ -67,27 +58,7 @@ export default {
 	},
 	methods: {
 		getTemplate (template) {
-			let component
-			switch (template) {
-			case 'text-button':
-				component = TextButton
-				break
-			case 'image':
-				component = Image
-				break
-			case 'edit-button':
-				component = EditButton
-				break
-			case 'button-group':
-				component = ButtonGroup
-				break
-			case 'input':
-				component = Input
-				break
-			case 'link':
-				component = Link
-				break
-			}
+			let component = 'cms-'+template
 			return component
 		},
 		onFieldClick (rowindex, row, index, event) {

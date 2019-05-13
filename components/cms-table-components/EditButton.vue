@@ -10,11 +10,3 @@
             @click="operate('delete')">删除</el-button>
     </div>
 </template>
-
-<script>
-import fieldMixin from '@/components/cms-table-components/field-mixin'
-
-export default {
-	mixins: [fieldMixin]
-}
-</script>

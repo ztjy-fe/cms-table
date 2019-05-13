@@ -6,11 +6,3 @@
             @click="operate(btn.flag || 'click')">{{btn.label || '按钮'}}</el-button>
     </div>
 </template>
-
-<script>
-import fieldMixin from '@/components/cms-table-components/field-mixin'
-
-export default {
-	mixins: [fieldMixin]
-}
-</script>
