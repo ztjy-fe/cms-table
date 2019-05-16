@@ -4,12 +4,12 @@
     </div>
 </template>
 
-<style scoped lang="scss">
+<style scoped>
     .img-wraper {
         width: 60px;
         overflow: hidden;
-        img {
-            width: 100%;
-        }
+    }
+    .img-wraper img {
+        width: 100%;
     }
 </style>

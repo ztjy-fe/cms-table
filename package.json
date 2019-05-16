@@ -1,6 +1,6 @@
 {
   "name": "cms-table",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "一个基于Element-UI的后台通用表格组件",
   "main": "cms-table.js",
   "scripts": {
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/ztjy-fe/cms-table/issues"
   },
-  "homepage": "https://github.com/ztjy-fe/cms-table#readme"
+  "homepage": "https://github.com/ztjy-fe/cms-table#readme",
+  "dependencies": {
+    "element-ui": "^2.8.2"
+  }
 }

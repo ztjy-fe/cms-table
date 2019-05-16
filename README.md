@@ -2,20 +2,24 @@
 在使用VUE开发后台类型的项目时，我们通常会选择Element-UI来搭建界面，而后台类型的项目用的最多的组件就是表格了，我们经常使用el-table来展示一组数据，但我们发现很多页面的开发都是在做重复性的工作，因此这个**通用表格组件**为你提供了一种通过JSON数据配置来快速开发表格的方案。
 
 # 依赖
-Element-UI
+- Vue
+- Element-UI
 
 # 安装
 ```sh
-$ npm install element-ui -S
 $ npm install cms-table
 ```
 
+# 效果图
+![效果图](http://files.specialaedu.com/files/store/2019/05/16/1557976549420.png)
+
 # 使用
-cms-table是基于Element-UI二次封装的通用组件，因此你的项目必须安装并使用Element-UI。
+cms-table是基于Element-UI二次封装的通用组件，使用前请务必导入Element以及样式模板。
 ### 全局引入
 ```js
 import Vue from 'vue'
 import Element from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 import cmsTable from 'cms-table' // 导入cms-table
  
 Vue.use(Element)
